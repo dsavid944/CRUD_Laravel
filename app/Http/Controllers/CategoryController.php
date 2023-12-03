@@ -69,4 +69,10 @@ class CategoryController extends Controller
         $category->delete();
         return redirect()->route('categories.index')->with('success', 'Category deleted successfully.');
     }
+
+    public function posts()
+    {
+        return $this->hasMany(Post::class);
+    }
+
 }

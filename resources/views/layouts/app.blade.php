@@ -25,6 +25,9 @@
             @yield('content') <!-- Aquí es donde se insertará el contenido específico de cada página -->
         </main>
     </div>
+    <div id="app">
+        <post-list-component :posts="posts"></post-list-component>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
